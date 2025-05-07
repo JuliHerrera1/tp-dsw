@@ -23,10 +23,10 @@ Regularidad
 
 | Requerimientos | Detalles |
 | ----- | :---- |
-| CRUD simple | 1.CRUD Administrador 2.CRUD Entrenador 3.CRUD Cliente |
-| Dependiente de CRUD | 1.CRUD Ejercicio {depende de} CRUD Rutina 2.CRUD Cupo {depende de} CRUD Turno |
+| CRUD simple | 1.CRUD Administrador<br>2.CRUD Entrenador<br>3.CRUD Cliente |
+| Dependiente de CRUD | 1.CRUD Ejercicio {depende de} CRUD Rutina<br>2.CRUD Cupo {depende de} CRUD Turno |
 | Listado \+ detalles | Listado de Ejercicios filtrado por atributo tipoEjercicio \=\> muestra ejercicios de ese tipo |
-| CUU | 1.Crear Rutina 2.Registrar Cliente |
+| CUU | 1.Crear Rutina<br>2.Registrar Cliente |
 
 Adicionales para aprobación
 
@@ -34,11 +34,11 @@ Adicionales para aprobación
 | ----- | :---- |
 | CRUD simple | 1.CRUD Turno<br>2.CRUD Rutina |
 | CRUD dependiente | 1.CRUD Cuota {depende de} CRUD Cliente |
-| CUU | 1.Ingreso del Cliente 2.Ver estado de la cuota |
+| CUU | 1.Ingreso del Cliente<br>2.Ver estado de la cuota |
 
 ## Alcance Adicional Voluntario
 
 | Requerimientos | Detalles |
 | ----- | :---- |
-| CUU/ Epics | 1.Gestión de turnos 2.Gestión de pagos |
+| CUU/ Epics | 1.Gestión de turnos<br>2.Gestión de pagos |
 
