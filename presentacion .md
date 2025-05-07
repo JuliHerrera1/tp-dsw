@@ -5,19 +5,21 @@
 
 ## Repositorios
 
-* frontend  
-* backend
+* [frontend]()  
+* [backend]()
 
 # Tema  
 ## Descripción  
 Gimnasio **TurnoFit**: esta aplicación busca mejorar la experiencia del cliente con nuestro gimnasio, permitiéndole gestionar por su cuenta cualquier tipo de actividades relacionadas con el servicio brindado, tales como inscribirse a charlas con especialistas, reservar turnos diarios o abonar sus cuotas mensuales. La aplicación cuenta con tres usuarios: Cliente, Entrenador y Administrador. 
 
 ## Modelo  
-[Modelo de dominio:](https://drive.google.com/file/d/1Wa9tm4JVtbpTqE7pUHRLNCeK8GW3ujhl/view?usp=sharing)
+[Modelo de dominio](https://drive.google.com/file/d/1Wa9tm4JVtbpTqE7pUHRLNCeK8GW3ujhl/view?usp=sharing)
 
 # Alcance funcional
 
 ## Alcance Mínimo
+
+Regularidad
 
 | Requerimientos | Detalles |
 | ----- | :---- |
@@ -26,7 +28,7 @@ Gimnasio **TurnoFit**: esta aplicación busca mejorar la experiencia del cliente
 | Listado \+ detalles | Listado de Ejercicios filtrado por atributo tipoEjercicio \=\> muestra ejercicios de ese tipo |
 | CUU | 1.Crear Rutina 2.Registrar Cliente |
 
-## Adicionales para aprobación
+Adicionales para aprobación
 
 | Requerimientos | Detalles |
 | ----- | :---- |
