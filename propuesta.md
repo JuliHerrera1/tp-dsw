@@ -32,7 +32,7 @@ Adicionales para aprobación
 
 | Requerimientos | Detalles |
 | ----- | :---- |
-| CRUD simple | 1.CRUD Turno 2.CRUD Rutina |
+| CRUD simple | 1.CRUD Turno<br>2.CRUD Rutina |
 | CRUD dependiente | 1.CRUD Cuota {depende de} CRUD Cliente |
 | CUU | 1.Ingreso del Cliente 2.Ver estado de la cuota |
 
