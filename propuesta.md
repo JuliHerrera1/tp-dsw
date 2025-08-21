@@ -25,7 +25,7 @@ Regularidad
 
 | Requerimientos | Detalles |
 | ----- | :---- |
-| CRUD simple | 1.CRUD Administrador<br>2.CRUD Entrenador<br>3.CRUD Cliente |
+| CRUD simple | 1.CRUD Administrador<br>2.CRUD Cliente |
 | Dependiente de CRUD | 1.CRUD Ejercicio {depende de} CRUD Rutina<br>2.CRUD Cupo {depende de} CRUD Turno |
 | Listado \+ detalles | Listado de Ejercicios filtrado por atributo tipoEjercicio \=\> muestra ejercicios de ese tipo |
 | CUU | 1.Crear Rutina<br>2.Registrar Cliente |
