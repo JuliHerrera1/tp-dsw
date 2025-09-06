@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Turnos</title>
+    <link rel="stylesheet" href="styleTurnos.css">
+</head>
+<body>
+<div id="menu_gestion_turnos">
+    <h1>Gestión de Turnos</h1>
+    <p>¿Qué desea realizar?</p>
+    <div class="botones">
+    <button onclick= "mostrarSeccion('form_turnos')">Crear Turno</button>
+    <button onclick= "mostrarSeccion('listado_turnos')">Ver listado de turnos</button>
+    </div>
+</div>
+
+<div id="form_turnos" style="display: none;">
+    <h2>Nuevo turno</h2>
+    <form id="crearTurno">
+        <fieldset>
+            <legend>Ingresar datos del turno deseado</legend>
+            <div class="form_input">
+                <label for="dia">Día</label>
+                <input type="date" id="dia" required>
+            </div>
+            <div class="form_input">
+                <label for="hora">Horario</label>
+                <input type="time" id="hora" required>
+            </div>
+            <div class="form_input">
+                <label for="cupos">Cupos</label>
+                <input type="number" id="cupos" required>
+            </div>
+            <div class="form_input form_submit">
+                <button id="botonFinalizarTurno" type="submit" >Finalizar</button>
+                <button id="botonVolverTurno" type="button" onclick="mostrarSeccion('menu_gestion_turnos')">Volver al menú</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<div id="listado_turnos" style="display: none;">
+    <h2>Listado de turnos</h2>
+    <input type="text" id="filtroDia" placeholder="Filtrar por día...">
+    <h2>Turnos disponibles</h2>
+    <table id="tabla_turnos">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Día</th>
+                <th>Horario</th>
+                <th>Cupos</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="contenido_tabla_turnos"></tbody>
+    </table>
+    <div class="form_input form_submit">
+                <button type="button" onclick="mostrarSeccion('menu_gestion_turnos')">Volver al menú</button>
+            </div>
+</div>
+
+
+    <script src="indexCRUDTurnos.js"></script>
+</body>
+</html>

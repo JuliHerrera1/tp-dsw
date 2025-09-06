@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestionar Clientes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleCRUDcli.css">
+</head>
+<body>
+
+<!--MENU INICIAL DE OPCIONES-->
+<div id="menu_gestion_cliente">
+    <h1>Gestión de Clientes</h1>
+    <p>¿Qué desea realizar?</p>
+    <button onclick= "mostrarSeccion('form_cliente')">Crear Cliente</button>
+    <button onclick= "mostrarSeccion('listado_clientes')">Ver listado de clientes</button>
+</div>
+
+<!--FORMULARIO PARA CREAR AL CLI-->
+<div id="form_cliente" style="display: none;">
+    <h2>Nuevo Cliente</h2>
+    <form id="crearFormulario">
+        <fieldset>
+            <legend>Ingresar datos personales</legend>
+            <div class="form_input">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div class="form_input">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" required>
+            </div>
+            <div class="form_input">
+                <label for="fecha">Fecha Nacimiento</label>
+                <input type="date" id="fecha" required>
+            </div>
+            <div class="form_input">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form_input">
+                <label for="tel">Teléfono</label>
+                <input type="number" id="tel" maxlength="10" required>
+            </div>
+            <div class="form_input form_submit">
+                <button type="submit">Finalizar</button>
+                <button type="button" onclick="mostrarSeccion('menu_gestion_cliente')">Volver al menú</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<!--FORMULARIO PARA EDITAR AL CLI-->
+<div id="form_modificar_cliente" style="display: none;">
+    <h2>Editar Cliente</h2>
+    <form id="editarFormulario">
+        <fieldset>
+            <legend>MODIFIQUE LOS DATOS DESEADOS</legend>
+            <div class="form_input">
+                <label for="editarNombre">Nombre</label>
+                <input type="text" id="editarNombre">
+            </div>
+            <div class="form_input">
+                <label for="editarApellido">Apellido</label>
+                <input type="text" id="editarApellido">
+            </div>
+            <div class="form_input">
+                <label for="editarFecha">Fecha Nacimiento</label>
+                <input type="date" id="editarFecha">
+            </div>
+            <div class="form_input">
+                <label for="editarEmail">Email</label>
+                <input type="email" id="editarEmail">
+            </div>
+            <div class="form_input">
+                <label for="editarTelefono">Teléfono</label>
+                <input type="number" id="editarTelefono">
+            </div>
+            <div class="form_input form_submit">
+                <button type="submit">Guardar cambios</button>
+                <button type="button" id="cancelarModificaciones">Cancelar</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<!--TABLA P/MOSTRAR DATOS LISTADO CLI-->
+    <div id="listado_clientes" style="display: none;">
+    <h2>Listado de clientes</h2>
+    <input type="text" id="filtroNombre" placeholder="Filtrar por nombre...">
+    <table id="tabla_clientes" border="10">
+        <thead>
+            <tr>
+                <th> ID </th>
+                <th> Nombre </th>
+                <th> Apellido </th>
+                <th> Fecha Nacimiento </th>
+                <th> Telefono </th>
+                <th> Email </th>
+                <th> Opciones </th>
+            </tr>
+        </thead>
+        <tbody id="contenido_tabla_clientes">
+        </tbody>
+    </table>
+    <button class="button_volver_menu" onclick="mostrarSeccion('menu_gestion_cliente')">Volver al menú</button>
+    </div>
+
+
+<script src="indexCRUDCLI.js"></script>
+</body>
+</html>
