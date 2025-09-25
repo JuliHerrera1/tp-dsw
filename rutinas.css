@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #272727;
+    color: #f86d10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: #f86d10;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+input, select {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    margin: 10px auto;
+    display: block;
+    border: 3px solid #666;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #eee;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #f86d10;
+}
+
+select option {
+    background-color: #272727;
+    color: #eee;
+}
+
+button, .button_asignar_rutinas {
+    background-color: #2c2c2c;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover, .button_asignar_rutinas:hover {
+    background-color: #f86d10;
+    transform: translateY(-3px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: transparent;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+label {
+    font-size: 0.9em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 6px 12px;
+    border: 2px solid #777;
+    text-align: center;
+    color: #eee;
+}
+
+th {
+    background-color: #2e2e2e;
+}
+
+tr:nth-child(even) {
+    background-color: #444;
+}
+
+tr:hover {
+    background-color: #f86d10;
+}
+
+#contenido_tabla_rutinas tr ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin: 5px 0;
+}
+
+#contenido_tabla_rutinas tr ul li {
+    padding: 2px 0;
+    color: #eee;
+}
+
+#mensajeFeedback, #mensajeRespuesta {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #90ee90;
+}
+
+@media (max-width: 600px) {
+    input, select {
+        width: 95%;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    button, .button_asignar_rutinas {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

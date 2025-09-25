@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rutinas</title>
+    <link rel="stylesheet" href="rutinas.css">
+</head>
+<body>
+    <div id="listado_rutinas">
+        <h1>Listado de rutinas</h1>
+        <input type="text" id="filtroRutina" placeholder="Filtrar por nivel...">
+        <table id="tabla_rutinas">
+        <thead>
+            <tr>
+                <th> ID </th>
+                <th> Nombre </th>
+                <th> Nivel </th>
+                <th> Descripcion </th>
+                <th> Ver ejercicios </th>
+            </tr>
+        </thead>
+        <tbody id="contenido_tabla_rutinas">
+        </tbody>
+    </table>
+    <button class="button_asignar_rutinas">Asignar rutinas a clientes</button>
+    </div>
+
+    <div id="asignar_rutina" style="display: none;">
+        <h2>Asignar rutina a cliente</h2>
+        <form id="form_asignar">
+            <label for="selectCliente">Cliente:</label>
+            <select id="selectCliente">
+                <option value="">Seleccione un cliente:</option>
+            </select>
+            <label for="selectRutina">Rutina:</label>
+            <select id="selectRutina">
+                <option value="">Seleccione una Rutina:</option>
+            </select>
+            <button type="submit">Asignar rutina</button>
+        </form>
+        <p id="mensajeRespuesta"></p>
+        
+        <h2>Clientes con rutina asignada</h2>
+        <table id="tablaClientesRutina">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Rutina Asignada</th>
+                </tr>
+            </thead>
+            <tbody id="contenido_tablaClientesRutina">
+            </tbody>
+        </table>
+        <button id="botonVolverRutina">Volver al listado</button>
+    </div>
+
+    <script src="rutinas.js"></script>
+</body>
+</html>
