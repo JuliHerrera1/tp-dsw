@@ -28,7 +28,7 @@ Regularidad
 | CRUD simple | 1.CRUD Administrador<br>2.CRUD Cliente |
 | Dependiente de CRUD | 1.CRUD Ejercicio {depende de} CRUD Rutina<br>2.CRUD Cupo {depende de} CRUD Turno |
 | Listado \+ detalles | Listado de Turnos filtrado por atributo día \=\> muestra los turnos de ese día |
-| CUU | 1.Crear Rutina<br>2.Registrar Cliente |
+| CUU | 1.Asignar rutina a cliente<br>2.Registrar Cliente |
 
 Adicionales para aprobación
 
