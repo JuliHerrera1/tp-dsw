@@ -12,7 +12,7 @@
 
 ## Tema  
 ### Descripción  
-Gimnasio **TurnosFit**: esta aplicación busca mejorar la experiencia del cliente con nuestro gimnasio, permitiéndole gestionar por su cuenta cualquier tipo de actividades relacionadas con el servicio brindado, tales como inscribirse a charlas con especialistas, reservar turnos diarios o abonar sus cuotas mensuales. La aplicación cuenta con dos usuarios: Cliente y Administrador. 
+Gimnasio **TurnosFit**: esta aplicación busca mejorar la experiencia del cliente con nuestro gimnasio, permitiéndole gestionar por su cuenta cualquier tipo de actividades relacionadas con el servicio brindado, tales como reservar turnos diarios o abonar sus cuotas mensuales. La aplicación cuenta con dos usuarios: Cliente y Administrador. 
 
 ### Modelo  
 [Modelo de dominio](https://drive.google.com/file/d/1Wa9tm4JVtbpTqE7pUHRLNCeK8GW3ujhl/view?usp=sharing)
